@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  using beans in spring   -->
+    <bean id="hello" class="com.jimmy.dao.Hello">
+        <property name="str" value="Spring"/>
+    </bean>
+
+    <!--
+        id: the uri of bean
+        class: the all name of bean
+        name: the same as alias, could have many names
+    -->
+    <bean id="hello2" class="com.jimmy.dao.Hello" name="hello3, hello4" />
+
+    <bean id="helloWorld" class="com.jimmy.dao.Hello">
+        <constructor-arg name="world" value="world"/>
+    </bean>
+
+    <alias name="hello" alias="hello2"/>
+
+    <!--
+        import: used in group work, could change several xml as one
+    -->
+
+
+</beans>

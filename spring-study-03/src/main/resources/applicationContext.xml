@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+    <bean id="cat" class="com.jimmy.pojo.Cat"/>
+    <bean id="dog" class="com.jimmy.pojo.Dog"/>
+
+
+
+    <!-- 寻找与set后面相同的attribute -->
+    <bean id="people" class="com.jimmy.pojo.People" autowire="byName">
+        <property name="name" value="jimmy"/>
+    </bean>
+
+
+    <!-- 保证类型全局为1 才能装配-->
+    <bean id="people1" class="com.jimmy.pojo.People" autowire="byType">
+        <property name="name" value="jimmy"/>
+    </bean>
+
+    <bean id="peopleAuto" class="com.jimmy.pojo.People"/>
+
+
+
+
+</beans>

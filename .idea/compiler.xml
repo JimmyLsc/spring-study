@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sprint-study-ioc1" />
+        <module name="spring-study-08" />
+        <module name="spring-study-07" />
+        <module name="spring-study-06" />
+        <module name="spring-study-05" />
+        <module name="spring-study-04" />
+        <module name="sprint-study-01" />
+        <module name="spring-study-02" />
+        <module name="spring-study-03" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
